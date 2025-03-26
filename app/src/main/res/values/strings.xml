@@ -1,0 +1,33 @@
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">tiendaSW</string>
+
+    <!-- Botón -->
+    <string name="button_register">Registrar</string>
+
+    <!-- Campos de texto -->
+    <string name="hint_size">Talla</string>
+    <string name="hint_price">Precio</string>
+
+    <!-- Opciones de Tipo para el Spinner -->
+    <string-array name="product_types">
+        <item>Camisa</item>
+        <item>Pantalón</item>
+        <item>Zapatos</item>
+        <item>Chompa</item>
+        <item>Short</item>
+        <item>Blusa</item>
+    </string-array>
+
+    <!-- Opciones de Género para el Spinner -->
+    <string-array name="genders">
+        <item>M</item>
+        <item>F</item>
+        <item>U</item>
+    </string-array>
+
+    <!-- Mensajes -->
+    <string name="message_complete_fields">Completa todos los campos</string>
+    <string name="message_register_success">Producto registrado correctamente</string>
+    <string name="message_register_failed">Error al registrar el producto</string>
+</resources>

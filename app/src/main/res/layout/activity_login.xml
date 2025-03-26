@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+  <!-- Título -->
+
+  <!-- Texto Usuario -->
+  <TextView
+      android:id="@+id/textViewTitulo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="232dp"
+      android:text="INICIAR SESIÓN"
+      android:textColor="@color/black"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.565"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/buttonLogin"
+      android:layout_width="0dp"
+      android:layout_height="54dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="@color/black"
+      android:text="LOGIN"
+      android:textColor="@android:color/white"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/editTextContraseña" />
+
+  <EditText
+      android:id="@+id/editTextUsuario"
+      android:layout_width="0dp"
+      android:layout_height="54dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="24dp"
+      android:background="@android:drawable/edit_text"
+      android:hint="Ingresa tu usuario"
+      android:inputType="text"
+      android:padding="12dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewUsuario" />
+
+  <Button
+      android:id="@+id/buttonRegistrar"
+      android:layout_width="0dp"
+      android:layout_height="54dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="@color/black"
+      android:text="REGISTRARSE"
+      android:textColor="@android:color/white"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
+
+  <EditText
+      android:id="@+id/editTextContraseña"
+      android:layout_width="0dp"
+      android:layout_height="54dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:background="@android:drawable/edit_text"
+      android:hint="Ingresa tu contraseña"
+      android:inputType="textPassword"
+      android:padding="12dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewContraseña" />
+
+  <TextView
+      android:id="@+id/textViewUsuario"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Usuario"
+      android:textSize="16sp"
+      android:textColor="@color/black"
+      app:layout_constraintTop_toBottomOf="@id/textViewTitulo"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginTop="16dp"
+      android:layout_marginStart="24dp" />
+
+  <!-- Campo Usuario -->
+
+  <!-- Texto Contraseña -->
+  <TextView
+      android:id="@+id/textViewContraseña"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Contraseña"
+      android:textSize="16sp"
+      android:textColor="@color/black"
+      app:layout_constraintTop_toBottomOf="@id/editTextUsuario"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginTop="16dp"
+      android:layout_marginStart="24dp" />
+
+  <!-- Campo Contraseña -->
+
+  <!-- Botón Login -->
+
+  <!-- Botón Registrarse -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
