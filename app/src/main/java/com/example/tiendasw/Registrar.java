@@ -27,7 +27,7 @@ public class Registrar extends AppCompatActivity {
     private EditText editTextTalla, editTextPrecio;
     private RadioGroup radioGroupGenero;
     private Button buttonRegistrar;
-    private String URL = "http://192.168.137.1/Tienda/app/services/service-producto.php"; // URL de tu API
+    private String URL = "http://192.168.1.22/Tienda/app/services/service-producto.php"; // URL de tu API
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

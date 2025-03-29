@@ -54,7 +54,7 @@ public class register extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    URL url = new URL("http://192.168.137.1/Tienda/app/Test/register.php");
+                    URL url = new URL("http://192.168.1.22/Tienda/app/Test/register.php");
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setRequestMethod("POST");
                     conn.setRequestProperty("Content-Type", "application/json");

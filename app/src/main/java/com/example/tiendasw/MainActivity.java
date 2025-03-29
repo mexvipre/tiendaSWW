@@ -12,7 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    private Button buttonListar,buttonRegistrar;
+    private Button buttonListar, buttonRegistrar, buttonBuscar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonRegistrar = findViewById(R.id.buttonRegistrar);
         buttonListar = findViewById(R.id.buttonListar);
+        buttonBuscar = findViewById(R.id.buttonBuscar); // Nuevo botón Buscar
 
         buttonListar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,10 +45,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
+        buttonBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, buscar.class);
+                startActivity(intent);
+            }
+        });
     }
 }

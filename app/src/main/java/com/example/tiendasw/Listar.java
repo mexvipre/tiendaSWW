@@ -26,7 +26,7 @@ public class Listar extends AppCompatActivity {
     private List<Producto> productoList;
 
     // URL de tu API
-    private static final String URL = "http://192.168.137.1/Tienda/app/services/service-producto.php";
+    private static final String URL = "http://192.168.1.22/Tienda/app/services/service-producto.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
